@@ -127,3 +127,42 @@ nav{
 .nav-menu-btn{
     display: none;
 }
+.nav-menu-btn i{
+    font-size: 28px;
+    cursor: pointer;
+}
+.active-link{
+    position: relative;
+    color: var(--first-color);
+    transition: .3s;
+}
+.active-link::after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -15px;
+    transform: translate(-50%, -50%);
+    width: 5px;
+    height: 5px;
+    background: var(--first-color);
+    border-radius: 50%;
+}
+
+/* ---- wrapper design ----- */
+.wrapper{
+    padding-inline: 10vw;
+}
+
+/* --- featured box ---- */
+.featured-box{
+    position: relative;
+    display: flex;
+    height: 100vh;
+    min-height: 700px;
+}
+
+/* --- featured text box --- */
+
+.featured-text{
+     position: relative;
+}
